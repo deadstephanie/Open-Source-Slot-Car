@@ -7,5 +7,14 @@ Parts List
 - 3mm copper desoldering braid
 - 1.5mm metal rod of some sort, such as welding rod or bar stock
 
+Usage
+Chassis supports:
+- SCX Compact
+- Artin 1/43*
+- Radio Shack 1/43*
+* these body shells will require modification to fit the rear motor as they have pieces that drop from the roof of the car to the rear axle and the motor is slightly too wide to fit in between them.
+
+To change which mounts are used edit the variables in chassis.scad using OpenScad and export. in addition you can edit the wheelbaseBias variable as desired to adjust the front axle mounts forward (+) and back (-)
+
 Wheels and guide flag are in early beta
 
