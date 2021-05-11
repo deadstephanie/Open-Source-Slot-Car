@@ -1,6 +1,7 @@
 artinMounts = false;
 radioshackMounts = true;
 scxCompactMounts = true;
+scxPorsche911Diffuser = true;
 wheelbaseBias = 0;
 
 
@@ -83,11 +84,11 @@ if (scxCompactMounts == true) {
     difference() {
         union() {
     translate([-31, 12, 0]) cube([13.5, 8, 2], false);
-    translate([-27.3, 16, 0]) cylinder(d = 6, h = 9.5);
+    translate([-28, 16, 0]) cylinder(d = 6, h = 11.5);
         }
         union() {
-    translate([-27.3, 16, -0.01]) cylinder(d = 3, h = 15);
-    translate([-27.3, 16, -0.01]) cylinder(d = 4.75, h = 5.5);
+    translate([-28, 16, -0.01]) cylinder(d = 3, h = 15);
+    translate([-28, 16, -0.01]) cylinder(d = 4.75, h = 8.5);
         }
     }
     difference() {
@@ -97,6 +98,21 @@ if (scxCompactMounts == true) {
         union() {
     translate([51.7, 16, -0.01]) cylinder(d = 3, h = 15);
     translate([51.7, 16, -0.01]) cylinder(d = 4.75, h = 5.5);
+        }
+    }
+}
+
+if (scxPorsche911Diffuser == true) {
+    difference() {
+        union() {
+    translate([-31, 3.5, 0]) cube([5, 25, 6], false);
+    rotate([0, 0, 20])translate([-16, 35, 0]) cube([9, 2, 6], false);
+    rotate([0, 0, -20])translate([-27, -7, 0]) cube([9, 2, 6], false);
+        }
+        union() {
+    translate([-28, 16, -0.01]) cylinder(d = 4.75, h = 8);
+    translate([-41, 20, 1]) rotate([0, 50, 0]) cube([10, 7, 10]);
+    translate([-41, 5, 1]) rotate([0, 50, 0]) cube([10, 7, 10]);
         }
     }
 }
