@@ -4,6 +4,9 @@ Parts List
 - Motor: 
  Mabuchi ft-010sa-09120 (28k rpm)
  Mabuchi ft-010sa-07300 (21k rpm)
+- M1.4 bolt(buy the 600pc m1-m1.6 fastener set on ebay)
+- M1.4 nut (again buyt the set)
+- 24 gauge wire
 - 3mm copper desoldering braid
 - 1.5mm metal rod of some sort, such as welding rod or bar stock
 - Black RTV of some sort to make the tires

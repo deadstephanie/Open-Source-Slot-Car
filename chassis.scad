@@ -1,11 +1,11 @@
 artinMounts = false;
 radioshackMounts = true;
-scxCompactMounts = true;
-scxPorsche911Diffuser = true;
+scxCompactMounts = false;
+scxPorsche911Diffuser = false;
 wheelbaseBias = 0;
 
 
-$fn = 500;
+$fn = 1000;
 
 difference() {
     union() {
@@ -14,18 +14,25 @@ difference() {
         translate([2, 3.25, 0]) cube ([22, 25.5, 2], false);
         translate([24, 0, 0]) cube ([10, 32, 2], false);
         //back wheel area
-        translate([-18, 4, 0]) cube([18, 24, 2], false);
+        translate([-18, 4, -1]) cube([18, 24, 3], false);
         //front wheel area
-        translate([34, 4, 0]) cube([22, 24, 2], false);
+        translate([34, 4, 0]) cube([23, 24, 2], false);
         //front splitter area
-        translate([56, 0, 0]) cube([10, 32, 2], false);
+        translate([57, 0, 0]) cube([9, 32, 2], false);
         //motor mount screw blocks
-        translate([-1, 7.5, 1.99]) cube([2, 4.5, 4.35], false);
-         translate([-18, 7.5, 1.99]) cube([2, 5, 4.35], false);
-        //motor mount box
+        //translate([-1, 7.5, 1.99]) cube([1.5, 4.5, 4.35], false);
+         //translate([-17.5, 7.5, 1.99]) cube([1.5, 5, 4.35], false);
+        //motor snout blocks
          translate([-13, 25.55, 1.99]) cube([9, 2, 2.6], false);
+         translate([-13, 4.45, 1.99]) cube([9, 2, 2.6], false);    
+        //motor mount crossover
+        translate([-18, 14, 2]) cube([19, 4, 10], false);
          //rotate([90, 0, 0]) translate([-8.5,6.5, -27.55]) cylinder(d = 9, h = 2);
-         translate([-13, 4.45, 1.99]) cube([9, 2, 2.6], false);
+        //wire inlays
+        translate([10, 26.75, 2]) cube ([6, 1, 2], false);
+        translate([10, 24.35, 2]) cube ([6, 1, 2], false);
+        translate([10, 4.25, 2]) cube ([6, 1, 2], false);
+        translate([10, 6.65, 2]) cube ([6, 1, 2], false);
 
 }    union() {
         //screw slot
@@ -33,17 +40,20 @@ difference() {
         //screw slot pocket
         translate([47, 14, -0.5]) cube([14, 4, 1], false);
         //guide flag hole
-        translate([40, 16, -0.5]) cylinder(d = 3, h = 3);
+        translate([40, 16, -0.5]) cylinder(d = 3.5, h = 3);
         //braid hole R
-        translate([43, 21, -0.5]) cube([8.1, 4.1, 3], false);
+        translate([43, 21, -0.5]) cube([3.1, 3.1, 3], false);
         //braid hole L
-        translate([43, 7, -0.5]) cube([8.1, 4.1, 3], false);
+        translate([43, 8, -0.5]) cube([3.1, 3.1, 3], false);
         //motor cutout
-        translate([-16, 6.45, -1]) cube ([15, 19.1, 3.01], false);
+        translate([-16, 6.45, -1.1]) cube ([15, 19.1, 4.01], false);
         //motor mount screw slot
-        translate([-20, 8.5, 4]) cube ([30, 2.5, 1.65], false);
-        //motor box semi circle
+        translate([-20, 8.5, 4]) cube ([30, 2.5, 1.55], false);
+        //motor snout cutout
         translate([-8.5, 28, 4.5]) rotate([90, 0, 0]) cylinder(d = 5, h = 30);
+    //motor mount crossover cutout
+    translate([-16, 13, 2]) cube([15, 6, 8], false);
+    translate([-18.5, 13, 2]) cube ([3, 6, 0.2], false);
         //sxc front screw pocket
         if (scxCompactMounts == true) translate([51.7, 16, -0.01]) cylinder(d = 4.75, h = 5.5);
     }
