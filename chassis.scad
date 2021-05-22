@@ -26,7 +26,7 @@ difference() {
          translate([-13, 25.55, 1.99]) cube([9, 2, 2.6], false);
          translate([-13, 4.45, 1.99]) cube([9, 2, 2.6], false);    
         //motor mount crossover
-        translate([-18, 14, 2]) cube([19, 4, 9], false);
+        //translate([-18, 14, 2]) cube([19, 4, 9], false);
          //rotate([90, 0, 0]) translate([-8.5,6.5, -27.55]) cylinder(d = 9, h = 2);
         //wire inlays
         translate([10, 26.75, 2]) cube ([6, 1, 2], false);
@@ -42,18 +42,20 @@ difference() {
         //guide flag hole
         translate([40, 16, -0.5]) cylinder(d = 3.5, h = 3);
         //braid hole R
-        translate([43, 21, -0.5]) cube([3.1, 3.1, 3], false);
+        translate([43, 19, -0.5]) cube([3.1, 3.1, 3], false);
+        translate([34, 19, -0.5]) cube([3.1, 3.1, 3], false);
         //braid hole L
-        translate([43, 8, -0.5]) cube([3.1, 3.1, 3], false);
+        translate([43, 10, -0.5]) cube([3.1, 3.1, 3], false);
+        translate([34, 10, -0.5]) cube([3.1, 3.1, 3], false);
         //motor cutout
         translate([-16, 6.45, -1.1]) cube ([15, 19.1, 4.01], false);
         //motor mount screw slot
         translate([-20, 8.5, 4]) cube ([30, 2.5, 1.55], false);
         //motor snout cutout
-        translate([-8.5, 29, 3.5]) rotate([90, 0, 0]) cylinder(d = 5, h = 30);
+        translate([-8.5, 29, 3.0]) rotate([90, 0, 0]) cylinder(d = 5, h = 30);
     //motor mount crossover cutout
-    translate([-16, 13, 2]) cube([15, 6, 7], false);
-    translate([-18.5, 13, 2]) cube ([3, 6, 0.2], false);
+    //translate([-16, 13, 2]) cube([15, 6, 7], false);
+    //translate([-18.5, 13, 2]) cube ([3, 6, 0.2], false);
         //sxc front screw pocket
         if (scxCompactMounts == true) translate([51.7, 16, -0.01]) cylinder(d = 4.75, h = 5.5);
     }
