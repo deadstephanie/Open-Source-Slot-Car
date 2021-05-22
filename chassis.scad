@@ -26,7 +26,7 @@ difference() {
          translate([-13, 25.55, 1.99]) cube([9, 2, 2.6], false);
          translate([-13, 4.45, 1.99]) cube([9, 2, 2.6], false);    
         //motor mount crossover
-        translate([-18, 14, 2]) cube([19, 4, 10], false);
+        translate([-18, 14, 2]) cube([19, 4, 9], false);
          //rotate([90, 0, 0]) translate([-8.5,6.5, -27.55]) cylinder(d = 9, h = 2);
         //wire inlays
         translate([10, 26.75, 2]) cube ([6, 1, 2], false);
@@ -50,9 +50,9 @@ difference() {
         //motor mount screw slot
         translate([-20, 8.5, 4]) cube ([30, 2.5, 1.55], false);
         //motor snout cutout
-        translate([-8.5, 28, 4.5]) rotate([90, 0, 0]) cylinder(d = 5, h = 30);
+        translate([-8.5, 29, 3.5]) rotate([90, 0, 0]) cylinder(d = 5, h = 30);
     //motor mount crossover cutout
-    translate([-16, 13, 2]) cube([15, 6, 8], false);
+    translate([-16, 13, 2]) cube([15, 6, 7], false);
     translate([-18.5, 13, 2]) cube ([3, 6, 0.2], false);
         //sxc front screw pocket
         if (scxCompactMounts == true) translate([51.7, 16, -0.01]) cylinder(d = 4.75, h = 5.5);
