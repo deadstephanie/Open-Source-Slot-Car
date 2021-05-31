@@ -19,7 +19,7 @@ difference() {
         //front wheel area
         translate([34, 4, 0]) cube([23, 24, 2], false);
         //front splitter area
-        translate([57, 0, 0]) cube([9, 32, 2], false);
+        translate([57, 0, 0]) cube([7, 32, 2], false);
         //motor mount screw blocks
         //translate([-1, 7.5, 1.99]) cube([1.5, 4.5, 4.35], false);
          //translate([-17.5, 7.5, 1.99]) cube([1.5, 5, 4.35], false);
@@ -89,20 +89,20 @@ if (scxCompactMounts == true) {
     difference() {
         union() {
     translate([-31, 12, 0]) cube([13.5, 8, 2], false);
-    translate([-28, 16, 0]) cylinder(d = 6, h = 11.5);
+    translate([-28, 16, 0]) cylinder(d = 6, h = 9.5);
         }
         union() {
     translate([-28, 16, -0.01]) cylinder(d = 3, h = 15);
-    translate([-28, 16, -0.01]) cylinder(d = 4.75, h = 8.5);
+    translate([-28, 16, -0.01]) cylinder(d = 4.75, h = 6.5);
         }
     }
     difference() {
         union() {
-    translate([51.7, 16, 0]) cylinder(d = 6, h = 7);
+    translate([51.7, 16, 0]) cylinder(d = 6, h = 5);
         }
         union() {
     translate([51.7, 16, -0.01]) cylinder(d = 3, h = 15);
-    translate([51.7, 16, -0.01]) cylinder(d = 4.75, h = 5.5);
+    translate([51.7, 16, -0.01]) cylinder(d = 4.75, h = 3.5);
         }
     }
 }
