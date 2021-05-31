@@ -8,8 +8,8 @@ Parts List
 - M1.4 nut (again buyt the set)
 - 24 gauge wire
 - 3mm copper desoldering braid
-- 1.5mm metal rod of some sort, such as welding rod or bar stock
-- Black RTV of some sort to make the tires
+- 1.5mm metal rod of some sort, such as welding rod or bar stock (EDM electrode tube recommended)
+- Black RTV (or any rtv) of some sort to make the tires
 
 Usage
 Chassis supports:
@@ -21,7 +21,9 @@ Chassis supports:
 Print Notes
 - Print at 100% infill and as high of quality as you can (0.12 on my ender 3)
 
-To change which mounts are used edit the variables in chassis.scad using OpenScad and export. in addition you can edit the wheelbaseBias variable as desired to adjust the front axle mounts forward (+) and back (-)
+To change which mounts are used edit the variables in chassis.scad using OpenScad and export. in addition you can edit the wheelbaseBias variable as desired to adjust the front axle mounts forward (+) and back (-). You can also edit the motorBoxBias variable to move the motor box left (+) or right (-) to account for uneven shaft lengths.
 
-Wheels and guide flag are in early beta
+Wheels: Thin wheels are recommended for most applications, wide wheels are recommended for scx and radio shack bodies which have wider bodies. 
+
+Guide flag are in early beta
 
