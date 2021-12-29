@@ -2,8 +2,8 @@
  A 1/43 direct drive slot car chassis designed to be 3D printed
 Parts List
 - Motor: 
- Mabuchi ft-010sa-09120 (28k rpm)
- Mabuchi ft-010sa-07300 (21k rpm)
+ Mabuchi ft-010sa-09190 (28k rpm @ 12V)
+ Mabuchi ft-010sa-07300 (21k rpm @ 12V)
 - M1.4 bolt(buy the 600pc m1-m1.6 fastener set on ebay)
 - M1.4 nut (again buyt the set)
 - 24 gauge wire
